@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  background-color: slategray;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.App {
+  min-height: 100vh;
+  padding-bottom: 80px;
+  width: 100vw;
+  background-color: #232323;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+div,
+span,
+p {
+  color: white;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+input, textarea, select {
+  width: 300px;
+  min-height: 30px;
+  border-radius: 3px;
+  border: none;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
