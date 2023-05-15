@@ -1,4 +1,4 @@
-import {creatContext, createContext, useReducer} from 'react'
+import {createContext, useReducer} from 'react'
 
 const initialState = {
   userId: null,
@@ -20,6 +20,7 @@ const GlobalStateProvider = (props) => {
         return state
     }
   }
+  
   const [state, dispatch] = useReducer(reducer, initialState)
 
   return (
