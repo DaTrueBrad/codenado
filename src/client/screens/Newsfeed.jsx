@@ -1,5 +1,6 @@
 import React, {useMemo, useEffect, useState} from "react";
 import axios from "axios";
+import Post from "../components/Post";
 
 const Newsfeed = () => {
   const [posts, setPosts] = useState([])
@@ -14,9 +15,9 @@ const Newsfeed = () => {
     })
     
   }
-  
+
   const postDisplay = useMemo(() => {
-    return posts.map((p,i) => <p>{p.title}</p>)
+    return posts.map((p,i) => <Post post={p}/>)
   },[posts])
 
   useEffect(() => {
